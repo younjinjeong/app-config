@@ -7,3 +7,11 @@ spring:
       server:
         git:
           uri: https://github.com/younjinjeong/app-config.git
+
+security:
+  basic:
+    enabled: false # turn off securing our application endpoints
+
+management:
+  security:
+    enabled: false # turn off securing the actuator endpoints

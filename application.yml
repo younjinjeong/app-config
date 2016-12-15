@@ -4,3 +4,20 @@ spring:
       server:
         git:
           uri: https://github.com/younjinjeong/app-config.git
+
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
+logging:
+  level:
+    io:
+      pivotal: DEBUG
+      
+eureka:
+  client:
+    service-url: ${vcap.services.discovery-service.credentials.uri:localhost:8761/eureka/}
